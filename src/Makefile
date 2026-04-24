@@ -42,7 +42,7 @@ else
 	PWD  := $(shell pwd)
 
 default:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD)
 
 endif
 
